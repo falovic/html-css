@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/0f037266e9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <main>
+
+            <article id="nav-paragraf">
+                <h1>Paragraf</h1>
+                <hr>
+
+                <p><b>pre</b> = şiir etiketi (otomatik hiza)</p>
+
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    <b>blockquote</b> = alıntı etiketi (cite="kaynak")
+                </blockquote>
+
+                <p><b>bdo</b> = <bdo dir="rtl">sret - ters</bdo> (dir="rtl")</p>
+
+                <p><b>abbr</b> = kısaltma <abbr title="World Health Organization"> WHO</abbr></p>
+            </article>
+
+            <article id="nav-bicim">
+                <h1>Biçim</h1>
+                <hr>
+                <p>
+                    <b>b</b>
+                    <br>
+                    <strong>strong</strong>
+                    <br>
+                    <i>i</i>
+                    <br>
+                    <em>em</em>
+                    <br>
+                    <u>u</u>
+                    <br>
+                    <ins>ins</ins>
+                    <br>
+                    Lorem <sup>sup</sup>
+                    <br>
+                    Lorem <sub>sub</sub>
+                    <br>
+                    <del>del</del>
+                    <br>
+                    Lorem <small>small</small>
+                    <br>
+                    <mark>mark</mark>
+                    <br>
+                    <q>q</q>
+                </p>
+            </article>
+
+            <article id="nav-liste">
+                <h1>Liste</h1>
+                <hr>
+                <p>Sıralı ve sırasız listeler <b>li</b> etiketi sayısı kadar madde içerir.</p>
+                <p>Açıklama listesinde <b>dt</b> = terim ve <b>dd</b> = açıklamadır.</p>
+                <h2>Sırasız Liste (ul)</h2>
+                <ul>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <ul>
+                        <li>Lorem ipsum dolor.</li>
+                        <ul>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                        </ul>
+                        <li>Lorem ipsum dolor.</li>
+                    </ul>
+                </ul>
+                {list-style-type:<b>disc</b>} = daire <br>
+                {list-style-type:<b>circle</b>} = halka <br>
+                {list-style-type:<b>square</b>} = kare <br>
+                {list-style-type:<b>none</b>} = boş <br>
+                <h2>Sıralı Liste (ol)</h2>
+                <ol>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <ol>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ol>
+                </ol>
+
+                <p>Sıralı listelerde <b>start</b> attribute ile başlangıç sayısı belirlenebilir.</p>
+
+                <ol start="5">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Tempore quasi sit quas! Temporibus.</li>
+                    <li>Autem amet inventore cum iste!</li>
+                </ol>
+
+                <p>Sıralı listelerde <b>type</b> attribute ile numara / harf verilebilir.</p>
+
+                <ol type="a">
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Debitis, obcaecati, repudiandae!</li>
+                    <ol type="i">
+                        <li>Lorem ipsum.</li>
+                        <li>Nesciunt, eum.</li>
+                    </ol>
+                    <li>Voluptatem, quam, id!</li>
+                </ol>
+                <h2>Açıklama Listesi (dl)</h2>
+                <b>dl</b> = açıklama listesi etiketi <br>
+                <b>dt</b> = terim (ad) <br>
+                <b>dd</b> = açıklama <br>
+                <dl>
+                    <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                    <dt>Milk</dt>
+                    <dd>- white cold drink</dd>
+                </dl>
+            </article>
+
+            <article id="nav-resim">
+                <h1>Resim</h1>
+                <hr>
+                <p>Web sayfasına resim eklemek için <b>img</b> etiketi kullanılır.</p>
+                <p>Görsel dosyalarını tek bir klasörde toplamak ve oradan çağırmak daha iyidir.</p>
+                Attribute;
+                <ul>
+                    <li><b>src</b> ile dosyanın bulunduğu dizin seçilir. Üst klasöre gitmek için <mark>../</mark> alt
+                        klasöre gitmek için sadece <mark>/</mark> yazılır..</li>
+                    <li><b>src</b> kısmına adres linki eklenerek de bir resim bağlantısı oluşturulabilir.</li>
+                    <li><b>height</b> ile uzunluk belirlenir.</li>
+                    <li><b>widht</b> ile genişlik belirlenir.</li>
+                    <li><b>alt</b> resmin görüntülenemediği zamanlarda isminin yer almasını sağlar.</li>
+                </ul>
+
+                <img src="media/monkey.jpg" height="400px" alt="monkey">
+                <img src="media/rain.gif" height="400px" alt="rain">
+                <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80"
+                    height="400px" alt="alone">
+                <hr>
+                <p><b>{background-repeat: no-repeat}</b> = arkaplan tekrar etmez</p>
+                <p><b>{background-size: cover}</b> = arkaplan öğeyi kaplar</p>
+                <p><b>{background-attachment: fixed}</b> = arkaplan kaymaz</p>
+                <hr>
+                <p><b>
+                        < picture>
+                    </b> = farklı cihazlar veya ekran boyutları için farklı resimler görüntülemenize
+                    olanak tanır.</p>
+
+                <p><b>
+                        < picture>
+                    </b>
+                    < source media="(min-width: 650px)" srcset="img_x.jpg"><br>
+                        < source media="(min-width: 465px)" srcset="img_y.jpg"><br>
+                            < img src="img_z.jpg"><br>
+                                <b>
+                                    < /picture>
+                                </b>
+                </p>
+
+                <div class="navborderb6" style="width: 70%;"><b>NOT:</b> <b>picture</b> etiketinin son alt etiketi
+                    olarak her zaman bir <b>img</b> etiketi belirtin. <b>img</b> etiketi, <b>picture</b>
+                    etiketini desteklemeyen tarayıcılar tarafından veya <b>source</b> etiketlerinin hiçbiri
+                    eşleşmediğinde kullanılır.</div><br>
+
+                <table class="navtable">
+                    <caption>Html image tags</caption>
+                    <thead>
+                        <tr>
+                            <th>Etiket</th>
+                            <th>Açıklama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>img</td>
+                            <td>Bir görüntüyü tanımlar</td>
+                        </tr>
+                        <tr>
+                            <td>map</td>
+                            <td>Bir görüntü haritası tanımlar</td>
+                        </tr>
+                        <tr>
+                            <td>area</td>
+                            <td>Bir resim haritası içinde tıklanabilir bir alan tanımlar</td>
+                        </tr>
+                        <tr>
+                            <td>picture</td>
+                            <td>Birden çok görüntü kaynağı için bir kapsayıcı tanımlar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="nav-form">
+                <h1>Form</h1>
+                <hr>
+                <p>Tüm form kontrolleri <b>form</b> etiketi arasına girilir. Kontroller <b>input</b> etikeytiyle
+                    oluşturulur. Type değeriyle belirlenir.</p>
+
+                <form>
+                    <ul>
+                        <hr>
+                        <li>Type değeri = <b>text</b> <br>
+                            Server tanımlama kodu = <b>name</b> <br>
+                            Kutu içi yönlendirici = <b>placeholder</b> <br>
+                            Doldurulması zorunlu alan = <b>required</b> </li>
+
+                        <p>
+                            Ad: <input type="text" name="name" placeholder="adınızı giriniz" required>
+                        </p>
+
+                        <p>
+                            Soyad: <input type="text" name="surname" placeholder="soyadınızı giriniz" required>
+                        </p>
+                        <hr>
+                        <li>Type değeri = <b>email</b> <br>
+                            name = mail <br>
+                            placeholder = e-posta giriniz
+
+                            <p>
+                                E-mail: <input type="email" name="mail" placeholder="e-posta giriniz" required>
+                            </p>
+                            <hr>
+                        <li>Type değeri = <b>password</b> <br>
+                            name = parola <br>
+                            placeholder = parola giriniz
+
+                            <p>
+                                Parola : <input type="password" name="parola" placeholder="parola giriniz">
+                            </p>
+                            <hr>
+                        <li>Type değeri = <b>checkbox</b> </li>
+
+                        <p>Beni Hatırla <input type="checkbox"></p>
+
+                        <p>
+                            Hobiler: <br>
+                            <input type="checkbox" name="hobi">Sinema <br>
+                            <input type="checkbox" name="hobi">Film <br>
+                            <input type="checkbox" name="hobi">Spor <br>
+                            <input type="checkbox" name="hobi">Müzik
+                        </p>
+                        <hr>
+                        <li>Type değeri = <b>radio</b> <br>
+                            Tek buton seçilebilmesi için = <b>name</b> </li>
+
+                        <p>
+                            Erkek <input type="radio" name="cinsiyet">
+                            Kadın <input type="radio" name="cinsiyet">
+                        </p>
+                        <hr>
+                        <li>Type değeri = <b>select</b> <br>
+                            Her bir seçenek için = <b>option</b> <br>
+                            Çoklu seçim için = <b>multiple</b></li>
+
+                        <p>
+                            <select>
+                                <option>Seçiniz</option>
+                                <option>Ankara</option>
+                                <option>Bursa</option>
+                                <option>İstanbul</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <select multiple>
+                                <option>Ankara</option>
+                                <option>Bursa</option>
+                                <option>İstanbul</option>
+                                <option>İzmir</option>
+                                <option>Adana</option>
+                                <option>Eskişehir</option>
+                            </select>
+                        </p>
+                        <hr>
+                        <li>Type değeri = <b>submit</b> <br>
+                            value = <b>Kaydet</b>
+
+                            <p>
+                                <input type="submit" value="Kaydet">
+                            </p>
+                        </li>
+                    </ul>
+                </form>
+            </article>
+
+            <article id="nav-tablo">
+                <h1>Tablo</h1>
+                <hr>
+                <p>
+                    Tablolar <b>table</b> etiketi arasında oluşturulur. <br>
+                    Satır = <b>tr</b> <i>(table row)</i> <br>
+                    Başlık = <b>th</b> <i>(table header)</i> <br>
+                    Sütun = <b>td</b> <i>(table data)</i> <br>
+                    Başlık kolonu = <b>thead</b> <br>
+                    Veri kolonu = <b>tbody</b> <br>
+                    Altbilgi kolonu = <b>tfoot</b> <br>
+                    Çizgi kalınlığı = <b>border</b> <br>
+                    Tablo genişliği = <b>width</b> (yüzdelik değerde sayı önce yazılır) <br>
+                    <b>colgroup</b> = Biçimlendirme için bir/birkaç sütundan oluşan grup
+                    <b>col</b> = Bir <b>colgroup</b> öğesi içindeki her sütun için sütun özellikleri
+                </p>
+                <hr>
+                <p>
+                    <b>{border-collapse: collapse;}</b> = çift kenarlığı engeller <br>
+                    <b>{border-spacing:}</b> = hücreler arası boşluk <br>
+                    <b>tr:nth-child(even) {background-color:}</b> = satır arkaplan rengi <br>
+                    <b>th:nth-child(even) { background-color:}</b> = sütun (başlık) arkaplan rengi <br>
+                    <b> td:nth-child(even) { background-color:}</b>= sütun (gövde) arkaplan rengi (odd:
+                    çift, even: tek) <br>
+                    <b>tr {border-bottom:}</b> = satırları çizgiyle ayırır <br>
+                    <b>tr:hover {background-color:}</b> = satırlara hover ekler
+                </p>
+                <hr>
+                <p>
+                    ((thead>tr>th*3)+(tbody>tr>td*3)*2) <br>
+                    border="1" <br>
+                    width="500px"
+                </p>
+                <table border="1" width="400px">
+                    <thead>
+                        <tr>
+                            <th>Kurs Adı</th>
+                            <th>Saat</th>
+                            <th>Ders Adeti</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Komple Web Gelştirme Eğitimi</td>
+                            <td>45</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>Core 2 Mvc Eğitimi : Sıfırdan İleri Seviye</td>
+                            <td>30</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <p>
+                    Kolon birleştirme = <b>colspan</b> <br>
+                    Satır birleştirme = <b>rowspan</b>
+                </p>
+                <table border="1" width="400px">
+                    <thead>
+                        <tr>
+                            <th>Kurs Adı</th>
+                            <th>Saat</th>
+                            <th>Ders Adeti</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Komple Web Gelştirme Eğitimi</td>
+                            <td>45</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td>Core 2 Mvc Eğitimi : Sıfırdan İleri Seviye</td>
+                            <td>30</td>
+                            <td rowspan="2">200</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Core 2 Mvc Eğitimi : Sıfırdan İleri Seviye</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article id="nav-link">
+                <h1 id="up">Link</h1>
+                <hr>
+                <p>Linkler <b>a</b> etiketiyle oluşturulur. Bağlantılar <b>href</b> ile eklenir.</p>
+                <p>Bağlantının yeni sekmede açılması için: <b>target="_blank"</b></p>
+                <p>
+                    <a href="7-resim.html" target="_blank">Resim</a>
+                </p>
+                <p>
+                    <a href="https://falovic.com" target="_blank">Falovic</a>
+                </p>
+                <hr>
+                <p>İndirme linki oluşturmak için dosya sıkıştırılır. Tarayıcıda zip/rar dosyaları açılamadığından
+                    otomatik indirilir.</p>
+                <p>
+                    <a href="../media/monkey.zip">İndir</a>
+                </p>
+                <hr>
+                <p>Sayfada belirli bir yere gitmek için, yönlendirme linkine <b>href="#..."</b> girilir. Konumdaki
+                    etikete <b>id="..."</b> kimliği verilir.</p>
+                <hr>
+                <p>Bir resim/ikon da linke dönüştürülebilir. Link etiketinin isim kısmına resmin etiketi yerleştirilir.
+                    <br><br>
+                    Bakınız: <a href="#nav-icon">Icon</a>
+                </p>
+            </article>
+
+            <article id="nav-semantic">
+                <h1>Semantic Tags</h1>
+                <hr>
+                <p>Html5 ile gelen "anlamsal etiketler" bölümleri daha kısa ve etkili bir yolla adlandırmaya yarar.</p>
+
+                <img src="http://sadikturan.com/img/course/semantic-etiketler-1-sadikturan.jpg" width="300">
+
+                <img src="http://sadikturan.com/img/course/semantic-etiketler-2-sadikturan.jpg" width="300">
+
+                <p>Etiketler için <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+                        target="_blank">tıklayın</a>.</p>
+
+                <p>Detaylı bilgi için <a href="https://www.sadikturan.com/html/html-semantik-etiketler/1329"
+                        target="_blank">tıklayın</a>.</p>
+            </article>
+
+            <article id="nav-iframe">
+                <h1>Iframe</h1>
+                <hr>
+                <p>
+                    Bir web sayfası içerisine farklı bir sayfa yerleştirmek için <b>iframe</b> etiketi kullanılır.
+                    İlgili sayfa linkinin <b>src</b> içine yerleştirilmesi yeterlidir. Genişlik ve yükseklik ayarlanır.
+                </p>
+
+                <p>
+                    Youtube videolarında "paylaş" seçeneği altında yer alan yerleştir komutu otomatik <b>iframe</b>
+                    kodunu oluşturmaktadır.
+                </p>
+
+                <iframe width="100%" height="520" src="https://www.youtube-nocookie.com/embed/7mwn5U2PNvk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+
+            <article id="nav-type">
+                <h1>Type</h1>
+                <hr>
+                <h3>Internal Css</h3>
+                <p>Sayfanın <b>head</b> kısmına açılan <b>style</b> etiketi içine girilen css kodları sayfanın tamamında
+                    etkili olur. Buna <b>Internal Css</b> denir. Yalnızca bir safyanın tamamında uygulanacak stiller
+                    için tercih edilir.</p>
+                <hr>
+                <h3>Inline Css</h3>
+                <p>Eğer css kodunun sayfadaki tek bir öğeye etki etmesi isteniyorsa, etikete <b>style</b> attribute
+                    girilir. Buna <b>Inline Css</b> denir.</p>
+                <hr>
+                <h3>External Css</h3>
+                <p>Kodunun birden fazla html sayfasına etki etmesi isteniyorsa <b>External <i>(Sayfa Dışı)</i> Css</b>
+                    tercih edilir. Stiller, <b>style.css</b> dosyası oluşturularak buraya kaydedilir. Diğer sayfalardan
+                    bu dosyaya bağlantı linki oluşturulur.</p>
+                <p>Sayfanın <b>head</b> kısmında oluşturulan <b>link</b> etiketine <b>rel="stylesheet" href="..."</b>
+                    değerleri girilmelidir.</p>
+                <hr>
+                <p>Özel kod genel kodu ezer.</p>
+                <p>Inline > Internal > External</p>
+            </article>
+
+            <article id="nav-classid">
+                <h1>Class & ID</h1>
+                <hr>
+                <p>Html etiketine birden fazla <b>class</b> girilebilir fakat <b>id</b> girilemez.</p>
+                <p>Eğer özel kodun genel kodu ezmemesi gerekiyorsa, css koduna <b>!important</b> eklenmelidir.</p>
+            </article>
+
+            <article id="nav-groupselector">
+                <h1>Group Selector</h1>
+                <hr>
+                <p><b>*</b> = Tüm etiketler seçilir</p>
+                <p><b>p</b> = Tüm p etiketleri seçilir</p>
+                <p><b>div p</b> = div etiketi içindeki tüm p etiketleri seçilir</p>
+                <p><b>div,p</b> = tüm div ve tüm p etiketleri seçilir seçilir</p>
+                <p><b>div>p</b> = üst etiketi div olan tüm p etiketleri seçilir (yalnızca bir üst etiketin div olması
+                    durumudur, div>ul>p durumundaki p etiketini kapsamayacaktır)</p>
+                <p><b>div.x</b> = class'ı x olan tüm div etiketleri seçilir</p>
+                <p><b>p~div</b> = p etiketinden sonra gelen aynı seviyedeki tüm div etiketleri seçilir</p>
+                <p><b>p+div</b> = p etiketinden sonra gelen ilk div etiketi</p>
+            </article>
+
+            <article id="nav-attributeselector">
+                <h1>Attribute Selector</h1>
+                <hr>
+                <p title>Bir etiketin <b>title</b> attribute kısmı alıntılanarak css kodu tasafından seçilebilir.
+                    <b>p[title] {...}</b>
+                <p>Eğer <b>tilde (~)</b> işareti kullanılarak <b>p[title~="kelime"] {...}</b> title başlığının bir kısmı
+                    girilse bile kod çalışır.</p>
+                <p>Başlangıç ya da bitiş kelimesi seçilerek de attribute gruplandırması yapılabilir.</p>
+                <p><b>a[href^=...] {...}</b> (^) başlangıç kelimesini seçer.</p>
+                <p><b>a[href$=...] {...}</b> ($) bitiş kelimesini seçer.</p>
+                <p>Form etiketleri de <b>type</b> attribute yoluyla gruplandırılabilirler.</p>
+                <p><b>input[type="button"]</b> <input type="button" value="Button" target="_blank"></p>
+                <p><b>input[type="text"]</b> <input type="text"></p>
+            </article>
+
+            <article id="nav-pseudoselector">
+                <h1>Pseudo Selector</h1>
+                <hr>
+                <p>Pseudo Element ve Pseudo Class olarak ikiye ayrılır.</p>
+                <h3>Pseudo Element</h3>
+                <p>Herhangi bir paragrafın ilk harfi ya da ilk satırı gibi, bir elemanın bir parçasını seçmek için
+                    kullanılır. Etiketin yanına <b>iki çift nokta '::'</b> <i>(p::{} gibi)</i> konularak css özellikleri
+                    girilir.</p>
+                <p>Örneğin bu sayfadaki her paragrafın ilk satırına background-color eklendi. Ancak aşağıdaki paragrafa
+                    atanan class değeri (p.about) seçilerek özel bir font-size değeri girildi. Ayrıca <b>p::before</b>
+                    ve <b>p::after</b> ile oluşturulacak her bir paragrafın önüne ve sonuna metin/satır/css gibi eklenti
+                    yapmak mümkün. </p>
+                <h3>Pseudo Class</h3>
+                <p>Sayfada yer alan "ul" etikenin "li" alt elemanı gibi, bir kapsam içerisindeki bir alt elemanı seçmek
+                    için kullanılır. Etiketin yanına <b>yalnız çift nokta ':'</b> <i>(li:{} gibi)</i> konularak css
+                    özellikleri girilir.</p>
+                <ul class="ul-pseudo-selector">
+                    <li>first</li>
+                    <li>second</li>
+                    <li>third</li>
+                    <li>fourth</li>
+                    <li>fifth</li>
+                </ul>
+                <p>Bağlantı linkleri "inline" iken boyut verilemez ancak "display:block" yapıldıktan sonra button
+                    görünümü verilebilir. Aşağıda yer alan pseudo class seçimleriyle linke buton görünümü verilebilir.
+                </p>
+                a:link - standart görünüm <br>
+                a:visited - ziyaret edilmiş <br>
+                a:hover - efekt <br>
+                a:active - aktif <br>
+
+                <a class="x-pseudo-selector" id="pseudo-button1x" href="" target="_blank">Primary</a>
+                <a class="x-pseudo-selector" id="pseudo-button2x" href="" target="_blank">Secondary</a>
+                <a class="x-pseudo-selector" id="pseudo-button3x" href="" target="_blank">Success</a>
+                <a class="x-pseudo-selector" id="pseudo-button4x" href="" target="_blank">Danger</a>
+                <a class="x-pseudo-selector" id="pseudo-button5x" href="" target="_blank">Warning</a>
+                <br>
+                <a class="y-pseudo-selector" id="pseudo-button1y" href="" target="_blank">Primary</a>
+                <a class="y-pseudo-selector" id="pseudo-button2y" href="" target="_blank">Secondary</a>
+                <a class="y-pseudo-selector" id="pseudo-button3y" href="" target="_blank">Success</a>
+                <a class="y-pseudo-selector" id="pseudo-button4y" href="" target="_blank">Danger</a>
+                <a class="y-pseudo-selector" id="pseudo-button5y" href="" target="_blank">Warning</a>
+
+                <p style="text-align: center">Fare imleci ile bir etiket üzerine gelindiğinde, farklı bir span etiketini
+                    etkileyen hover değeri de atanabilir.</p>
+                <div class="div-pseudo-selector">
+                    <p style="text-align: center">Etki</p><span class="span-pseudo-selector">Tepki <br> Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit. Nisi provident, ipsam, praesentium quos quisquam
+                        earum atque ea ipsa rem veniam, quis inventore distinctio mollitia cum. Doloremque cupiditate
+                        ipsa ut beatae.</span>
+                </div>
+            </article>
+
+            <article id="nav-cssinherit">
+                <h1>Css Inherit</h1>
+                <hr>
+
+                <p><b>Div</b> etiketine atanan değer "inline css" olsa bile, <b>span</b> etiketine atanan "internal css"
+                    değeri ezemez.</p>
+
+                <p>Bir etikete <b>class</b> ve <b>id</b> ile iki farklı stil atandığında, normalde id değeri özel olduğu
+                    için diğerini ezmelidir, ancak class'a <b>!important</b> ifadesi eklenerek id değerini ezmesi
+                    sağlanır.</p>
+            </article>
+
+            <article id="nav-div">
+                <h1>Div (Division)</h1>
+                <hr>
+                <p>En sık kullanılan gruplandırma etiketidir. Division (bölüm) kelimesinin kısaltmasıdır.</p>
+                <hr>
+                <p><b>height</b> sınırlı girildiğinde sonraki elemanlar taşar.</p>
+
+                <div id="navdiv1">
+                    <p>#div1</p>
+                    Lorem ipsum dolor sit amet. <br>
+                    Pariatur ex vel placeat eum. <br>
+                    Quidem omnis temporibus, natus. <br>
+                    Deserunt porro, aperiam blanditiis! <br>
+                    Necessitatibus, natus ad nostrum. <br>
+                </div>
+                <hr>
+                <p><b>{overflow: scroll;}</b> = taşma olmasa bile scrollbar oluşur. (y axis de oluştu)</p>
+                <div id="navdiv2">
+                    <p>#div2</p>
+                    Lorem ipsum dolor sit amet. <br>
+                    Pariatur ex vel placeat eum. <br>
+                    Quidem omnis temporibus, natus. <br>
+                    Deserunt porro, aperiam blanditiis! <br>
+                    Necessitatibus, natus ad nostrum. <br>
+                </div>
+                <hr>
+                <p><b>{overflow: hidden;}</b> = taşan kısımlar görünmez olur.</p>
+                <div id="navdiv3">
+                    <p>#div3</p>
+                    Lorem ipsum dolor sit amet. <br>
+                    Pariatur ex vel placeat eum. <br>
+                    Quidem omnis temporibus, natus. <br>
+                    Deserunt porro, aperiam blanditiis! <br>
+                    Necessitatibus, natus ad nostrum. <br>
+                </div>
+                <hr>
+                <p><b>{overflow: auto;}</b> = yalnızca taşma varsa scrollbar oluşur. (y axis oluşmadı)</p>
+                <div id="navdiv4">
+                    <p>#div4</p>
+                    Lorem ipsum dolor sit amet. <br>
+                    Pariatur ex vel placeat eum. <br>
+                    Quidem omnis temporibus, natus. <br>
+                    Deserunt porro, aperiam blanditiis! <br>
+                    Necessitatibus, natus ad nostrum. <br>
+                </div>
+            </article>
+
+            <article id="nav-floatingimages">
+                <h1>Floating Images</h1>
+                <hr>
+                <p>Nesnelerin sayfa üzerinde hizalanmasını sağlar.</p>
+                <p><b>{float:right;}</b> = resmi metnin sağına hizalar.</p>
+                <p class="navfloatimage-img1">
+                    <img class="navfloatimage" src="media/monkey.jpg" alt="Monkey">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, repellat dolore voluptate
+                    temporibus autem eos. Illo voluptas harum ea id eos recusandae quibusdam fugiat rerum deserunt
+                    doloremque reprehenderit repellat vitae consequatur magni adipisci distinctio, facere suscipit nam
+                    eius animi impedit optio, vel perspiciatis enim nulla. Iusto eos error tempore ullam quas hic,
+                    reiciendis, expedita quam earum dignissimos enim debitis fugiat aperiam distinctio, facere soluta,
+                    similique fuga blanditiis! Quod animi, et enim magnam accusamus officia doloribus molestiae
+                    necessitatibus asperiores at voluptate cupiditate repellendus tempora nemo, veniam, eveniet tempore.
+                    Alias ipsa sit quaerat illo id rem, fugit, aliquam eaque fuga eius nemo.
+                </p>
+                <br><br><br>
+                <p><b>{overflow:auto;}</b> = resmi border ile çevreler.</p>
+                <p class="navfloatimage-img2">
+                    <img class="navfloatimage" src="media/monkey.jpg" alt="Monkey">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, repellat dolore voluptate
+                    temporibus autem eos. Illo voluptas harum ea id eos recusandae quibusdam fugiat rerum deserunt
+                    doloremque reprehenderit repellat vitae consequatur magni adipisci distinctio, facere suscipit nam
+                    eius animi impedit optio, vel perspiciatis enim nulla. Iusto eos error tempore ullam quas hic,
+                    reiciendis, expedita quam earum dignissimos enim debitis fugiat aperiam distinctio, facere soluta,
+                    similique fuga blanditiis! Quod animi, et enim magnam accusamus officia doloribus molestiae
+                    necessitatibus asperiores at voluptate cupiditate repellendus tempora nemo, veniam, eveniet tempore.
+                    Alias ipsa sit quaerat illo id rem, fugit, aliquam eaque fuga eius nemo.
+                </p>
+            </article>
+
+            <article id="nav-cssdisplay">
+                <h1>Css Display</h1>
+                <hr>
+                <ul>
+                    <li>none = nesne devre dışı kalır</li>
+                    <li>inline = nesne satır-içi olur, boyut verilemez</li>
+                    <li>block = nesne satırı kaplar, boyut verilebilir, sonraki nesne alt satıra geçer</li>
+                    <li>inline-block = nesneler satır-içi olur ve yanyana gelir ancak boyut da verilebilir</li>
+                </ul>
+            </article>
+
+            <article id="nav-position">
+                <h1>Position</h1>
+                <hr>
+                <p>Herhangi bir nesnenin sayfa üzerindeki konumunu belirtmeye yarar. Önceki "floating" işlemi ise
+                    nesneleri birbiri ardına sıralamaya ya da sağa / sola yaslamaya yarıyordu.</p>
+                <p>Position işlemi 5 farklı değer alabilir:</p>
+                <p>static | relative | fixed | absolute | sticky</p>
+                <p>Hizalama yönleri: left (sol) | right (sağ) | top (üst) | bottom (alt)</p>
+
+                <hr>
+
+                <p style="text-align: left"><b>Relative:</b> Hizalanan etiket, bulunduğu konum dışına çıkmaz.</p>
+
+                <div class="navpositionbig">
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox" id="navpob1">
+                        <h3>relative</h3>
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                </div>
+
+                <hr>
+
+                <p style="text-align: left"><b>Absolute:</b> Etiket hizalanırken sayfa bütününe göre konum alır, mevcut
+                    konumundan çıkar.</p>
+
+                <div class="navpositionbig">
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox" id="navpob2">
+                        <h3>absolute</h3>
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                </div>
+
+                <p>Eğer <b>absolute</b> girilen etiketin dış etiketine <b>relative</b> girilirse, bu durumda hizalamayı
+                    dış etikete göre yapar.</p>
+
+                <div class="navpositionbig" style="position: relative">
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox" id="navpob3" style="position: absolute">
+                        <h3>absolute</h3>
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                </div>
+
+                <hr>
+
+                <p style="text-align: left"><b>Fixed:</b> Sayfa akışı devam etse de etiket kendi konumunda sabit kalır.
+                </p>
+
+                <div class="navpositionbig">
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox" id="navpob4">
+                        <a href="#nav-position">
+                            <h3 style="color: black">fixed</h3>
+                        </a>
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                </div>
+
+                <hr>
+
+                <p style="text-align: left"><b>Sticky:</b> Yapışkan nesne özelliğidir. Nesne, top: px değerine ulaştığı
+                    an üst kısma yapışır.</p>
+
+                <div class="navpositionbig" style="overflow: auto">
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox" id="navpob5">
+                        <h3>sticky</h3>
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                    <div class="navpositionbox">
+                    </div>
+                </div>
+            </article>
+
+            <article id="nav-margin">
+                <h1>Margin</h1>
+                <hr>
+                <p>div {display:inline-block;}</p>
+                <div class="navmarginb1" style="background-color: red">box 1</div>
+                <div class="navmarginb1" style="background-color: blue">box 2</div>
+                <div class="navmarginb1" style="background-color: green">box 3</div>
+
+                <p>div {float:left;}</p>
+                <div class="navmarginb2" style="background-color: red">box 1</div>
+                <div class="navmarginb2" style="background-color: blue">box 2</div>
+                <div class="navmarginb2" style="background-color: green">box 3</div>
+
+                <br><br><br>
+
+                <p>span {margin:10px;}</p>
+                <span class="navmargins1" style="background-color: red">box 1</span>
+                <span class="navmargins1" style="background-color: blue">box 2</span>
+                <span class="navmargins1" style="background-color: green">box 3</span>
+
+                <p>span {margin:10px; display:inline-block;}</p>
+                <span class="navmargins2" style="background-color: red">box 1</span>
+                <span class="navmargins2" style="background-color: blue">box 2</span>
+                <span class="navmargins2" style="background-color: green">box 3</span>
+            </article>
+
+            <article id="nav-border">
+                <h1>Border</h1>
+                <hr>
+                <div class="navborderbox" id="navborderb1">box 1</div>
+                <div class="navborderbox" id="navborderb2">box 2</div>
+                <div class="navborderbox" id="navborderb3">box 3</div>
+                <div class="navborderbox" id="navborderb4">box 4</div>
+                <div class="navborderbox" id="navborderb5">box 5</div>
+                <div class="navborderb6">Message Box</div>
+            </article>
+
+            <article id="nav-font">
+                <h1>Font</h1>
+                <hr>
+                <p>Stil özelliği <b>font-size</b> "px", "%" ve "em" şekillerinde belirlenebilir.</p>
+                <p>Yazı tipleri <b>font-family</b> olarak seçilir. Tarayıcı yazı tipini tanımaz ise, bir sonraki girilen
+                    değere geçer.</p>
+                <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> adresinden kullanılmak istenilen
+                    fontun özellikleri seçilerek linki sayfaya eklenebilir.</p>
+                <hr>
+                <div style="display: inline-block; margin: 0 50px 0 50px;">
+                    <p style="font-family: Courier New" class="font">Courier New</p>
+                    <p style="font-family: Helvetica" class="font">Helvetica</p>
+                    <p style="font-family: Georgia" class="font">Georgia</p>
+                </div>
+
+                <div style="display: inline-block; margin: 0 50px 0 50px;">
+                    <p style="font-family: Lucida Handwriting" class="font">Lucida Handwriting</p>
+                    <p style="font-family: Brush Script MT" class="font">Brush Script MT</p>
+                    <p style="font-family: Papyrus" class="font">Papyrus</p>
+                </div>
+            </article>
+
+            <article id="nav-styingtext">
+                <h1>Stying Text</h1>
+                <hr>
+                <ul>
+                    <li><b>line-height</b> = satır aralığı</li>
+                    <li><b>word-spacing</b> = kelime aralığı</li>
+                    <li><b>text-indent</b> = paragraf başı</li>
+                    <li><b>letter-spacing</b> = harf aralığı</li>
+                    <li><b>text-transform:</b></li>
+                    <ul>
+                        <li><b>uppercase</b> = tamamı büyük harf</li>
+                        <li><b>lowercase</b> = tamamı küçük harf</li>
+                        <li><b>capitalize</b> = baş harfler büyük</li>
+                    </ul>
+                </ul>
+            </article>
+
+            <article id="nav-icon">
+                <h1>Icons</h1>
+                <hr>
+                <p>Birçok ücretsiz icon'a <a href="https://fontawesome.com" target="_blank">Font Awesome</a> sitesinden
+                    erişilebilir.</p>
+                <p>Siteden kopyalanan script kodu <b>head</b> kısmına yapıştırılır ve icon etiketleri <b>body</b>
+                    kısmına eklenir.</p>
+                <p>Size = <b>fa-xs | fa-sm | fa-lg | fa-2x | fa-10x |</b></p>
+                <p>Spin = <b>fa-spin</b> | & | Pulse = <b>fa-pulse</b></p>
+                <span class="navicon">
+                    <a class="fas fa-spinner fa-spin"></a>
+                    <a class="fab fa-whatsapp-square fa-3x"
+                        href="https://wa.me/905432718644?text=Merhaba,%20bir%20web%20sitesi%20kurmak%20istiyorum.%20"></a>
+                    <a class="fas fa-envelope-square fa-3x" href="mailto:mail@falovic.com"></a>
+                    <a class="fab fa-github-square fa-3x" href="https://github.com/falovic"></a>
+                    <a class="fas fa-spinner fa-pulse"></a>
+                </span>
+            </article>
+
+            <article id="nav-aligningtext">
+                <h1>Aligning Text</h1>
+                <hr>
+                <ul>
+                    <li><b>text-align:</b></li>
+                    <ul>
+                        <li><b>left</b> = yazıyı sola yaslar</li>
+                        <li><b>center</b> = yazıyı ortalar</li>
+                        <li><b>right</b> = yazıyı sağa yaslar</li>
+                        <li><b>justify</b> = iki yana yaslar</li>
+                    </ul>
+                </ul>
+                <hr>
+                <ul>
+                    <li><b>column-count</b> = girilen sayı oranında kolonlara böler</li>
+                </ul>
+                <p style="column-count: 2; text-align: center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sint, provident perferendis. Consectetur veniam earum tempore facilis officiis, culpa, maxime fuga
+                    provident quo sapiente nihil doloribus, voluptates enim rerum error delectus, cumque consequuntur
+                    nisi saepe nam aut. Necessitatibus cum, voluptatum recusandae reiciendis fugiat dolorem fugit eius
+                    sunt quaerat omnis, veritatis pariatur doloribus animi magni nisi consequatur. Alias ipsam libero
+                    repudiandae et dolorum reprehenderit, reiciendis quas adipisci facilis ea voluptates debitis quam,
+                    consequatur voluptas dolore cum possimus placeat. Laboriosam amet nobis ad fuga pariatur voluptate
+                    officiis cum molestias perferendis ratione accusantium assumenda, incidunt rem labore, sapiente
+                    maiores ipsa temporibus recusandae harum natus.</p>
+                <hr>
+                <ul>
+                    <li><b>column-rule</b> = kolonlar arasında çizgi oluşturur</li>
+                </ul>
+                <p style="column-count: 3; column-rule: 1px solid black; text-align: center">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Sint, provident perferendis. Consectetur veniam earum tempore facilis
+                    officiis, culpa, maxime fuga provident quo sapiente nihil doloribus, voluptates enim rerum error
+                    delectus, cumque consequuntur nisi saepe nam aut. Necessitatibus cum, voluptatum recusandae
+                    reiciendis fugiat dolorem fugit eius sunt quaerat omnis, veritatis pariatur doloribus animi magni
+                    nisi consequatur. Alias ipsam libero repudiandae et dolorum reprehenderit, reiciendis quas adipisci
+                    facilis ea voluptates debitis quam, consequatur voluptas dolore cum possimus placeat. Laboriosam
+                    amet nobis ad fuga pariatur voluptate officiis cum molestias perferendis ratione accusantium
+                    assumenda, incidunt rem labore, sapiente maiores ipsa temporibus recusandae harum natus. Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit. Sint, provident perferendis.</p>
+
+                <div class="navborderb6" style="width: 80%">
+                    <p>Diğer tarayıcılarda sürüm farklılıklarından ötürü herhangi bir problem olmaması için aşağıdaki
+                        gibi belirtilmelidir:</p>
+                    <p>
+                        column-count: 2; <br>
+                        -webkit-column-count: 2; (opera, chrome, safari) <br>
+                        -moz-column-count: 2; (mozilla)
+                    </p>
+                    <p>
+                        column-rule: 1px solid black; <br>
+                        -webkit-column-rule: 1px solid black; (opera, chrome, safari) <br>
+                        -moz-column-rule: 1px solid black; (mozilla)
+                    </p>
+                </div>
+            </article>
+
+            <article id="nav-boxshadow">
+                <h1>Box Shadow</h1>
+                <hr>
+                <p>Gölge efekti verilirken x, y ve blur değerleri pixel olarak girilir.</p>
+                <p><b>{box-shadow: x, y, b}</b></p>
+                <p>Faklı kenarlar için farklı değerler girilecek ise virgülle ayrılır.</p>
+                <p><b>{box-shadow: x1, y1, b1, x2, y2, b2}</b></p>
+                <p>Opacity ve color eklenebilir, hover efekti verilebilir.</p>
+                <ul>
+                    <li>x : left</li>
+                    <li>y : bottom</li>
+                    <li>-x : right</li>
+                    <li>-y : top</li>
+                </ul>
+                <div class="card c1"></div>
+                <div class="card c2"></div>
+                <div class="card c3"></div>
+                <div class="card c4"></div>
+                <p>Farklı tarayıcılarda box-shadow özelliğinin desteklenmesi için şu şekilde belirtilmelidir:
+                <ul>
+                    <li>{ -webkit-box-shadow: }</li>
+                    <li>{ -mox-box-shadow: }</li>
+                </ul>
+                </p>
+            </article>
+
+            <article id="nav-transition">
+                <h1>Transition</h1>
+                <hr>
+                <p>Stil değişikliklerine <b>transition</b> ile gecikme süresi verilir.</p>
+                <p><b>{transition: width 1s, color 2s}</b></p>
+                <p>Hız eğrisi <b>transition-timing-function</b> ile ayarlanır:</p>
+                <ul>
+                    <li><b>ease:</b> yavaş başlar, hızlanır, yavaş sona erer. (varsayılan)</li>
+                    <li><b>linear:</b>baştan sona hız sabittir.</li>
+                </ul>
+                <hr>
+                <div class="trans" id="trans1"></div>
+                <div class="trans" id="trans2"></div>
+                <div class="trans" id="trans3"></div>
+                <div class="trans" id="trans4"></div>
+                <div class="trans" id="trans5"></div>
+
+                <br><br><br><br><hr>
+            </article>
+            
+        </main>
+        <div class="nav">
+            <nav>
+                <h3>Html</h3>
+                <ol class="nav">
+                    <li><a href="#nav-paragraf">Paragraf</a></li>
+                    <li><a href="#nav-bicim">Biçim</a></li>
+                    <li><a href="#nav-liste">Liste</a></li>
+                    <li><a href="#nav-resim">Resim</a></li>
+                    <li><a href="#nav-form">Form</a></li>
+                    <li><a href="#nav-tablo">Tablo</a></li>
+                    <li><a href="#nav-semantic">Semantic Tags</a></li>
+                    <li><a href="#nav-iframe">Iframe</a></li>
+                </ol>
+                <h3>Css</h3>
+                <ol class="nav">
+                    <li><a href="#nav-type">Type</a></li>
+                    <li><a href="#nav-classid">Class & ID</a></li>
+                    <li><a href="#nav-groupselector">Group Selector</a></li>
+                    <li><a href="#nav-attributeselector">Attribute Selector</a></li>
+                    <li><a href="#nav-pseudoselector">Pseudo Selector</a></li>
+                    <li><a href="#nav-cssinherit">Css Inherit</a></li>
+                    <li><a href="#nav-div">Div</a></li>
+                    <li><a href="#nav-floatingimages">Floating Images</a></li>
+                    <li><a href="#nav-cssdisplay">Css Display</a></li>
+                    <li><a href="#nav-position">Position</a></li>
+                    <li><a href="#nav-margin">Margin</a></li>
+                    <li><a href="#nav-border">Border</a></li>
+                    <li><a href="#nav-font">Font</a></li>
+                    <li><a href="#nav-styingtext">Stying Text</a></li>
+                    <li><a href="#nav-icon">Icon</a></li>
+                    <li><a href="#nav-aligningtext">Aligning Text</a></li>
+                    <li><a href="#nav-boxshadow">Box Shadow</a></li>
+                    <li><a href="#nav-transition">Transition</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

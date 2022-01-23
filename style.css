@@ -1,0 +1,494 @@
+/* Div */
+
+body {
+    background-color: gainsboro;
+}
+
+#container {
+    width: 1200px;
+    margin: 1em auto;
+}
+
+main {
+    width: 80%;
+    float: left;
+    position: relative;
+}
+
+div.nav {
+    width: 20%;
+    float: right;
+}
+
+article {
+    background-color: white;
+    border-radius: 2em;
+    margin: 0 0 20px 0;
+    padding: 20px;
+}
+
+nav {
+    background-color: white;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    margin-left: 20px;
+    padding: 20px;
+    position: fixed;
+    overflow-y: scroll;
+    height: 90%
+}
+
+/****************************************************/
+
+/* Table */
+
+table.navtable,th,td {
+    text-align: center; 
+    border: 1px solid black;
+}
+
+/****************************************************/
+
+/* List */
+
+ol.nav > li a {
+    text-decoration: none;
+    color: black;
+}
+
+ol.nav > li a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****************************************************/
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: gainsboro;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: dimgray;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: red;
+    border-radius: 0;
+}
+
+/****************************************************/
+
+/* Pseudo Selector - Tablo */
+
+ul.ul-pseudo-selector li {
+    padding: 10px;
+    list-style: none;
+    border-radius: 10em;
+    text-align: center;
+}
+
+ul.ul-pseudo-selector li:nth-of-type(odd) {
+    background-color: darkgray;
+}
+
+/* Pseudo Selector - Buton */
+
+a.x-pseudo-selector {
+    padding: 5px 5px;
+    border: 2px solid gray;
+    border-radius: 2em;
+    display: block;
+    width: 100px;
+    color: gray;
+    text-decoration: none;
+    margin: 10px auto;
+    text-align: center;
+}
+
+a.x-pseudo-selector:link {
+    color: gray;
+    display: inline-block;
+}
+
+a#pseudo-button1x:hover {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+}
+
+a#pseudo-button2x:hover {
+    background-color: gray;
+    color: white;
+    border: 2px solid gray;
+}
+
+a#pseudo-button3x:hover {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+a#pseudo-button4x:hover {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+
+a#pseudo-button5x:hover {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+}
+
+/**********/
+
+a.y-pseudo-selector {
+    padding: 5px 5px;
+    border-radius: 3px;
+    display: block;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    margin: 10px auto;
+    text-align: center;
+}
+
+a#pseudo-button1y:link {
+    background-color: blue;
+    display: inline-block;
+}
+
+a#pseudo-button2y:link {
+    background-color: gray;
+    display: inline-block;
+}
+
+a#pseudo-button3y:link {
+    background-color: green;
+    display: inline-block;
+}
+
+a#pseudo-button4y:link {
+    background-color: red;
+    display: inline-block;
+}
+
+a#pseudo-button5y:link {
+    background-color: orange;
+    display: inline-block;
+}
+
+a.y-pseudo-selector:hover {
+    opacity: 0.7;
+}
+
+/* Pseudo Selector - Etki & Tepki*/
+
+span.span-pseudo-selector {
+    display: none;
+    text-align: center;
+}
+
+div.div-pseudo-selector:hover span {
+    display: block;
+    border: 2px solid gray;
+    border-radius: 2em;
+    animation-duration: 100s
+}
+
+/****************************************************/
+
+/* Division (Div) */
+
+#navdiv1 {
+    background-color: lightgray;
+    border-radius: 2em;
+    width: 40%;
+    display: inline-block;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#navdiv2 {
+    background-color: lightgray;
+    border-radius: 2em;
+    width: 40%;
+    display: inline-block;
+    height: 100px;
+    overflow: scroll;
+    margin: 10px;
+    padding: 10px;
+}
+
+#navdiv3 {
+    background-color: lightgray;
+    border-radius: 2em;
+    width: 40%;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+}
+
+#navdiv4 {
+    background-color: lightgray;
+    border-radius: 2em;
+    width: 40%;
+    display: inline-block;
+    height: 100px;
+    overflow: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+/****************************************************/
+
+/* Floating Image */
+
+img.navfloatimage {
+    width: 130px;
+    margin: 5px;
+    float: right;
+}
+
+p.navfloatimage-img1 {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+p.navfloatimage-img2 {
+    padding: 5px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+/****************************************************/
+
+/* Position */
+
+div.navpositionbig {
+    width: 500px;
+    height: 300px;
+    border: 3px solid navy;
+    margin: auto;
+}
+
+div.navpositionbox {
+    width: 70px;
+    height: 70px;
+    border: 3px solid navy;
+    display: block;
+    margin: 10px;
+}
+
+#navpob1 {
+    background-color: aqua;
+    position: relative;
+    left: 50px;
+    text-align: center;
+}
+
+#navpob2 {
+    background-color: aqua;
+    position: absolute;
+    left: 50px;
+    text-align: center;
+}
+
+#navpob3 {
+    background-color: aqua;
+    position: absolute;
+    left: 50px;
+    text-align: center;
+}
+
+#navpob4 {
+    background-color: aqua;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+}
+
+#navpob5 {
+    background-color: aqua;
+    position: sticky;
+    top: 20px;
+    text-align: center;
+}
+
+/****************************************************/
+
+/* Margin */
+
+.navmarginb1 {
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.navmarginb2 {
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    float: left;
+}
+
+.navmargins1 {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.navmargins2 {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+/****************************************************/
+
+/* Border */
+
+/* text'i div içinde ortalamak için "line-height" = "height" olmalı */
+.navborderbox {
+    background-color: lightgray;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 3px solid;
+}
+
+#navborderb1 {
+    border-color: red;
+}
+
+#navborderb2 {
+    border-color: green;
+}
+
+#navborderb3 {
+    border-color: blue;
+}
+
+#navborderb4 {
+    border-radius: 50%;
+}
+
+#navborderb5 {
+    border-top-color: red;
+    border-right-color: blue;
+    border-bottom-color: gold;
+    border-left-color: green;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.navborderb6 {
+    background-color: aliceblue;
+    border-left: 5px solid midnightblue;
+    margin-top: 10px;
+    padding: 10px;
+    width: 35%;
+}
+
+/****************************************************/
+
+/* Icon */
+
+        span.navicon a {
+            color: navy;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        span.navicon a:hover {
+            color: red;
+        }
+
+
+/****************************************************/
+
+/* Box Shadow */
+
+.card {
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.c1 {
+    box-shadow: 5px 5px 10px;
+    opacity: 0.5;
+}
+
+.c2 {
+    box-shadow: -5px -5px 10px;
+    opacity: 0.5;
+}
+
+.c3 {
+    box-shadow: 5px 5px 10px blue, -5px -5px 10px red;
+
+}
+
+.c4 {
+    border: 2px solid rgba(159, 159, 159, 0.333);
+}
+
+div.c4:hover {
+    box-shadow: 1px 1px 20px, -1px -1px 20px;
+    color: rgb(64, 224, 208);
+    border-color: white;
+}
+
+/****************************************************/
+
+/* Transition */
+
+div.trans {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+    border: 1px solid;
+    transition: 0.7s;
+}
+
+#trans1:hover {
+    height: 100px;
+}
+#trans2:hover {
+    background-color: gold;
+}
+#trans3:hover {
+    border-radius: 50%;
+}
+#trans4:hover {
+    transform: rotate(45deg);
+}
+#trans5:hover {
+    width: 100px;
+    background-color: red;
+}

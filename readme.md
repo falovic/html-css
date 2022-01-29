@@ -1,3 +1,4 @@
-# tutorial
+# Tutorial
 
-> [Live Demo](https://falovic.github.io/html-css)
+> - Html & Css hap bilgiler.
+> - [Live Demo](https://falovic.github.io/html-css)

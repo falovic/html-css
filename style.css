@@ -29,13 +29,13 @@ article {
 
 nav {
     background-color: white;
-    border-top-left-radius: 2em;
-    border-bottom-left-radius: 2em;
     margin-left: 20px;
+    margin-right: 20px;
     padding: 20px;
     position: fixed;
     overflow-y: scroll;
-    height: 90%
+    height: 90%;
+    /* border-radius: 2em; */
 }
 
 /****************************************************/

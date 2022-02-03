@@ -42,10 +42,14 @@ nav {
 
 /* Table */
 
-table.navtable,th,td {
-    text-align: center; 
-    border: 1px solid black;
+.table th, td {
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    font-size: 15px;
+    padding-inline: 5px;
 }
+
 
 /****************************************************/
 
